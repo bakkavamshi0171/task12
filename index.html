@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        box-sizing: border-box;
+        margin: 0;
+        padding:0;
+      }
+      .header{
+        width:100vw;
+        background: url("background\ image.jpg") no-repeat;
+        position: relative;
+      }
+      .heading{
+        display: flex;
+        justify-content: space-between;
+        font-size: xx-large;
+        color: white;
+        padding:50px;
+        position: sticky;
+        opacity: 0.8;
+      }
+      .header li{
+        display:inline;
+        padding:20px;
+      }
+      ul{
+        margin-top: 30px;
+      }
+      .container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width:100vw;
+        padding:20px;
+      
+        background-color: black;
+      }
+      .leftdiv{
+        width:40vw;
+        height:80vh;
+        border: 2px solid blue;
+        display: grid;
+        padding:5px;
+        grid-template-columns: auto auto;
+        gap:5px;
+        overflow: auto;
+      }
+      .rightdiv{
+        width:55vw;
+        border: 2px solid blue;
+        background-color: beige;
+       
+      }
+      .rightdiv iframe{
+        width:100%;
+        height:100%;
+        border: none;
+        object-fit: cover;
+      }
+      .leftdiv div{
+        border: 1px solid black;
+        background-color: blueviolet;
+        display: inline-block;
+        text-align: center;
+        min-width: 200px;
+        min-height: 200px;
+      }
+      img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+      }
+      a{
+        width:100%;
+        height:100%;
+      }
+      @media screen and (max-width:1008px){
+        .leftdiv{
+          display:grid;
+          grid-template-columns: 1fr;
+          width:100%;
+        }
+      }
+     </style>
+</head>
+<body>
+    <div class="header">
+        <div class="heading">
+            <h1 >Image Gallery</h1>
+            <ul style="list-style: none">
+                <li>Places</li>
+                <li>Events</li>
+                <li>Persons</li>
+                <li>Personal</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="leftdiv">
+                <div class="item1"><a href="istockphoto-1500563478-170667a.webp" target="screen"><img src="istockphoto-1500563478-170667a.webp"></a></div>
+                <div class="item2"><a href="background image.jpg" target="screen"><img src="background image.jpg"></a></div>
+                <div class="item3"><a href="beautiful-pink-flower-anemones-fresh-260nw-1028135845.webp"target="screen"><img src="beautiful-pink-flower-anemones-fresh-260nw-1028135845.webp"></a></div>
+                <div class="item4"><a href="bird-8788491_1280.webp" target="screen"><img src="bird-8788491_1280.webp"></a></div>
+                <div class="item5"><a href="breathtaking-bali-nature-free-photo.webp" target="screen"><img src="breathtaking-bali-nature-free-photo.webp"></a></div>
+                <div class="item6"><a href="colorful-design-with-spiral-design_188544-9588.avif" target="screen"><img src="colorful-design-with-spiral-design_188544-9588.avif"></a></div>
+                <div class="item7"><a href="free-nature-images.jpg" target="screen"><img src="free-nature-images.jpg"></a></div>
+                <div class="item8"><a href="images.jpeg" target="screen"><img src="images.jpeg"></a></div>
+                <div class="item7"><a href="free-nature-images.jpg" target="screen"><img src="free-nature-images.jpg"></a></div>
+                <div class="item8"><a href="images.jpeg" target="screen"><img src="images.jpeg"></a></div>
+        </div>
+        <div class="rightdiv">
+            <iframe src="" name="screen" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
